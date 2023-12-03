@@ -1,0 +1,13 @@
+[Unit]
+Description=Reboots Frontier when idle
+
+
+[Service]
+Type=simple
+ExecStart=~/scripts/rebooter.py
+Restart=always
+RestartSec=15
+
+
+[Install]
+WantedBy=multi-user.target
